@@ -1,0 +1,106 @@
+/*importante colocar margin, padding e box sizing zero para não atrapalhar a estilização total*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 50%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+.row{
+    width: 100%;
+    border: 5px solid red;
+    overflow: hidden;
+}
+/*Alguns dos jeitos para resolver a questão do espaço entre os containers
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+/*cl - celular
+tb - tablet
+dk - desktop
+lg - telas largas*/
+
+[class *= 'col-']{
+    float: left;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid cornflowerblue;
+}
+.col-cl-1{ width: calc(100% / 12);}
+.col-cl-2{ width: calc((100% / 12)*2);}
+.col-cl-3{ width: calc((100% / 12)*3); }
+.col-cl-4{ width: calc((100% / 12)*4); }
+.col-cl-5{ width: calc((100% / 12)*5); }
+.col-cl-6{ width: calc((100% / 12)*6); }
+.col-cl-7{ width: calc((100% / 12)*7); }
+.col-cl-8{ width: calc((100% / 12)*8); }
+.col-cl-9{ width: calc((100% / 12)*9); }
+.col-cl-10{ width: calc((100% / 12)*10); }
+.col-cl-11{ width: calc((100% / 12)*11); }
+.col-cl-12{ width: calc((100% / 12)*12); }
+/*Tablets*/
+@media screen and (min-width: 768px){
+    .container{
+
+.col-tb-1{ width: calc(100% / 12);}
+.col-tb-2{ width: calc((100% / 12)*2);}
+.col-tb-3{ width: calc((100% / 12)*3); }
+.col-tb-4{ width: calc((100% / 12)*4); }
+.col-tb-5{ width: calc((100% / 12)*5); }
+.col-tb-6{ width: calc((100% / 12)*6); }
+.col-tb-7{ width: calc((100% / 12)*7); }
+.col-tb-8{ width: calc((100% / 12)*8); }
+.col-tb-9{ width: calc((100% / 12)*9); }
+.col-tb-10{ width: calc((100% / 12)*10); }
+.col-tb-11{ width: calc((100% / 12)*11); }
+.col-tb-12{ width: calc((100% / 12)*12); }
+    }
+}
+/*Desktop*/
+@media screen and (min-width: 992px){
+    .container{
+.col-dk-1{ width: calc(100% / 12);}
+.col-dk-2{ width: calc((100% / 12)*2);}
+.col-dk-3{ width: calc((100% / 12)*3); }
+.col-dk-4{ width: calc((100% / 12)*4); }
+.col-dk-5{ width: calc((100% / 12)*5); }
+.col-dk-6{ width: calc((100% / 12)*6); }
+.col-dk-7{ width: calc((100% / 12)*7); }
+.col-dk-8{ width: calc((100% / 12)*8); }
+.col-dk-9{ width: calc((100% / 12)*9); }
+.col-dk-10{ width: calc((100% / 12)*10); }
+.col-dk-11{ width: calc((100% / 12)*11); }
+.col-dk-12{ width: calc((100% / 12)*12); }
+    }
+}
+/*Telas Largas*/
+@media screen and (min-width: 1200px){
+    .container{
+.col-lg-1{ width: calc(100% / 12);}
+.col-lg-2{ width: calc((100% / 12)*2);}
+.col-lg-3{ width: calc((100% / 12)*3); }
+.col-lg-4{ width: calc((100% / 12)*4); }
+.col-lg-5{ width: calc((100% / 12)*5); }
+.col-lg-6{ width: calc((100% / 12)*6); }
+.col-lg-7{ width: calc((100% / 12)*7); }
+.col-lg-8{ width: calc((100% / 12)*8); }
+.col-lg-9{ width: calc((100% / 12)*9); }
+.col-lg-10{ width: calc((100% / 12)*10); }
+.col-lg-11{ width: calc((100% / 12)*11); }
+.col-lg-12{ width: calc((100% / 12)*12); }
+    }
+}
+
+.fundo{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 15px 0;
+    background: purple;
+}
