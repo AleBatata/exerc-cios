@@ -44,3 +44,9 @@ objIdade.value = '';
     // console.log(resultado);
 
 }
+
+
+
+function listarClientes() {
+
+}
