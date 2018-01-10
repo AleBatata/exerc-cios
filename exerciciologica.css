@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.puma{
+    max-width:50px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+.Nike{
+    max-width:50px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+.DC{
+    max-width:50px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+}
+
