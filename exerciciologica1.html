@@ -10,85 +10,86 @@
     <title>Exercicio Logica 1</title>
 </head>
 
-<body>
-    <div id="header">
-        <h1>You have
+<body onload="listarProdutos()">
+    <div class="header">
+        <p>You have
             <strong>3 items</strong> in your order</h1>
-    </div>
-    <div id="itemsTable">
-        <table>
-            <tr>
-                <td>Name</td>
-                <td>Price</td>
-                <td>Quantity</td>
-                <td>Total</td>
+        </p></div>
+    <div class="items-Table">
+        <table class="table">
+            <tr class="header-list">
+                <td class="header-listName">Name</td>
+                <td class="header-listPrice">Price</td>
+                <td class="header-listQuantity">Quantity</td>
+                <td class="header-listTotal">Total</td>
             </tr>
-            <tr>
-                <td>
-                    <span>
-                        <i class="fa fa-times-circle" aria-hidden="true"></i>
-                        <img id="puma" src="Puma Tee.jpg" alt="Puma Tee">
-                    </span>
-                    <span>Puma Golf Raglan Tech Polo Tee</span>
-                    <span>Color: </span>
-                </td>
-                <td>$ 72</td>
-                <td>
+            <tr class="item">
+                <td class= "item-selection">
+                    <div class="item-selectionGroup">
+                        <div class="item-selectionBox">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i></div>
+                        <div class="item-photo">
+                        <img id="puma" src="Puma Tee.jpg" alt="Puma Tee"></div></div>
+                    <div class="item-selectionDetails">
+                        <div class="item-name">Puma Golf Raglan Tech Polo Tee</div>
+                        <div class="item-color">Color: <i class="fa fa-circle" aria-hidden="true"></i></div>
+                        <div class="item-size">Size: XXL</div></div></td>
+                <td class="item-price">$ 72</td>
+                <td class="item-quantity">
                     <div class="quantity-box">
                         <input type="button" class="minus" value="-">
                         <input type="number" class="quantity">
-                        <input type="button" class="plus" value="+">
-                    </div>
-                </td>
-                <td>$ 216</td>
-            </tr>
-            <tr>
-                <td>
-                    <i class="fa fa-times-circle" aria-hidden="true"></i>
-                    <img id="Nike" src="Nike Shoes.jpg" alt="Nike Shoes"> Nike Men's Running Shoes
-                </td>
-                <td>$ 129</td>
-                <td>
+                        <input type="button" class="plus" value="+"></div></td>
+                <td class="item-total">$ 216</td></tr>
+
+            <tr class="item">
+                <td class="item-selection">
+                    <div class= "item-selectionGroup">
+                        <div class="item-selectionBox">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i></div>
+                        <div class="item-photo">
+                        <img id="Nike" src="Nike Shoes.jpg" alt="Nike Shoes"></div></div>
+                    <div class="item-selectionDetails">
+                        <div class="item-name">Nike Men's Running Shoes</div>
+                        <div class="item-color">Color: <i class="fa fa-circle" aria-hidden="true"></i></div>
+                        <div class="item-size">Size: 43</div></div></td>
+                <td class="item-price">$ 129</td>
+                <td class="item-quantity">
                     <div class="quantity-box">
                         <input type="button" class="minus" value="-">
                         <input type="number" class="quantity">
-                        <input type="button" class="plus" value="+">
-                    </div>
-                </td>
-                <td>$ 129</td>
-            </tr>
-            <tr>
-                <td>
-                    <i class="fa fa-times-circle" aria-hidden="true"></i>
-                    <img id="DC" src="Snowboard Jacket.jpg" alt="Snowboard Jacket"> DC Men's Axis Snowboard Jacket
-                </td>
-                <td>$ 89</td>
-                <td>
-                    <div class="quantity-box">
-                        <input type="button" class="minus" value="-">
-                        <input type="number" class="quantity">
-                        <input type="button" class="plus" value="+">
-                    </div>
-                </td>
-                <td>$ 178</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>$ 523</td>
-            </tr>
-        </table>
-    </div>
+                        <input type="button" class="plus" value="+"></div></td>
+                    <td class="item-total">$ 129</td></tr>
+
+            <tr class="item">
+                <td class="item-selection">
+                    <div class="item-selectionGroup">
+                        <div class="item-selectionBox">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i></div>
+                        <div class="item-photo">
+                        <img id="DC" src="Snowboard Jacket.jpg" alt="Snowboard Jacket"></div></div>
+                    <div class="item-selectionDetails">
+                        <div class="item-name">DC Men's Axis Snowboard Jacket</div>
+                        <div class="item-color">Color: <i class="fa fa-circle" aria-hidden="true"></i></div>
+                        <div class="item-size">Size: S</div></div></td>
+                    <td class="item-price">$ 89</td>
+                    <td class="item-quantity">
+                        <div class="quantity-box">
+                            <input type="button" class="minus" value="-">
+                            <input type="number" class="quantity">
+                            <input type="button" class="plus" value="+"></div></td>
+                    <td class="item-total">$ 178</td></tr>
+                <tr class="list-total">
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td class="list-subtotal">$ 523</td></tr></table></div>
     <div class="purchase-step1">
-        <span>
-            <i class="fa fa-chevron-left" aria-hidden="true"></i>
-            <p>Continue Shopping</p>
-        </span>
-        <span>
-            <input type="button" class="shippingInfo" id="shippingInfo" value="Shipping Info    >">
-        </span>
-    </div>
-    <script src=exercicioLogica1.js></script>
+        <span class="continue-shopping">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i><p>Continue Shopping</p></span>
+        <span class="shipping-info">
+            <input type="button" class="shippingInfo" id="shippingInfo" value="Shipping Info    >"></span></div>
+        <script src=exercicioLogica1.js></script>
 </body>
+
 </html>

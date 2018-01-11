@@ -3,22 +3,100 @@
     padding: 0;
     box-sizing: border-box;
 }
+.item-selection{
+    width: 15%;
+    display: inline-block;
+}
+.item-selectionBox .item-photo{
+    display: inline-block;
+}
 .puma{
-    max-width:50px;
+    max-width:90%;
     max-height:50px;
     width: auto;
     height: auto;
 }
 .Nike{
-    max-width:50px;
+    max-width:90%;
     max-height:50px;
     width: auto;
     height: auto;
 }
 .DC{
-    max-width:50px;
+    max-width:90%;
     max-height:50px;
     width: auto;
     height: auto;
 }
+.item-selectionGroup{
+    display: inline-block;
+    margin-left: -4px;
+    padding: 25px;
+}
+.item-selectionBox{
+    width: 30%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.item-photo{
+    width: 70%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.item-selection{
+    width: 60%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.item-price{
+    width: 16%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.item-quantity{
+    width: 20%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.item-total{
+    width: 10%;
+    display: inline-block;
+    margin-left: -4px;
+}
 
+
+.item-selectionDetails{
+    display: inline-block;
+    margin-left: -4px;
+    padding: 25px;
+}
+.item-name{
+    width: 100%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.item-color{
+    width: 40%;
+    display: inline-block;
+    margin-left: -4px;
+}
+.item-size{
+    width: 60%;
+    display: inline-block;
+    margin-left: -4px;
+}
+input {
+    margin-right: -4px;
+    width: 60%;
+}
+.minus .plus{
+    width: 10%;
+}
+.continue-shopping{
+    float: left;
+    margin-left: 5%;
+}
+.shipping-info{
+    float: right;
+    margin-right: 5%;
+}
