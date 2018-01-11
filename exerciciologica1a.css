@@ -3,3 +3,93 @@
     padding: 0;
     box-sizing: border-box;
 }
+.list-table{
+    width: 100%;
+    /* display: table; */
+}
+
+.header-list{
+background-color: red;
+width: 100%;
+/* display: table-cell;     */
+}
+.header-listName{
+    width: 60%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.header-listPrice{
+    width: 10%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.header-listQuantity{
+    width: 20%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.header-listTotal{
+    width: 7%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.list{
+background-color: blue;
+width: 100%;
+/* display: table-cell; */
+}
+.item-selection{
+    width: 5%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.item-photo{
+    width: 10%;
+    display: inline-block;
+    /* border: solid 1px black;     */
+}
+.item-description{
+    width: 45%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.item-price{
+    width: 10%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.item-quantity{
+    width: 20%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.item-total{
+    width: 6%;
+    display: inline-block;
+    /* border: solid 1px black; */
+}
+.item-descriptionColor{
+    width: 30%;
+    display: inline-block;
+}
+.item-descriptionSize{
+    width: 70%;
+    display: inline-block;
+}
+.list-total{
+background-color: yellow;
+}
+.list-bottom{
+    width: 70%;
+    display: inline-block;
+}
+.list-subtotal{
+    width: 10%
+    display: inline-block;
+}
+
+
+
+.purchase-step1{
+background-color: green;
+}
